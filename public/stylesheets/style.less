@@ -1,8 +1,282 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-a {
-  color: #00B7FF;
+//general styles
+
+h1{
+  color: #EA693F;
+  letter-spacing: 5px;
+  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15vh;
+}
+h2{
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+h3{
+  color: #272933;
+  letter-spacing: 5px;
+  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+p{
+  color: #272933;
+  margin-left: 60px;
+  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+strong{
+  font-weight: bold;
+}
+
+//header styles
+header{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  max-height: 600px;
+  min-height: 500px;
+  background: #272933;
+  .siteNav{
+    ul{
+      text-align: center;
+      padding-top: 10px;
+      li{
+        display: inline-block;
+        text-decoration: none;
+        color: #FFFFFF;
+        letter-spacing: 5px;
+        font-family: 'Raleway', Sans-Serif;
+        font-size: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-left: 20px;
+        a{
+          text-decoration: none;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    svg{
+      margin: 0 auto;
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      right: 0;
+      .wave{
+        animation: wave1 10s infinite cubic-bezier(0.38, 0.01, 0.43, 1.03);
+        opacity: 0.3;
+        height: 500px;
+      }
+      .two{
+        animation: wave1 13s infinite cubic-bezier(0.38, 0.01, 0.43, 1.03);
+        opacity: 0.2;
+      }
+      .three{
+        animation: wave2 12s infinite cubic-bezier(0.38, 0.01, 0.43, 1.03);
+        opacity: 0.1;
+      }
+    }
+  }
+}
+
+.line{
+  width: 40px;
+  height: 4px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+//wave animations
+
+@keyframes wave1 {
+  0% {
+    d: path("M1599.995,171C1289,171,1190.102-0.25,789,0C389,0,289,171,0,171v27h1600C1600,198,1599.995,200,1599.995,171z");
+  }
+
+  50% {
+    d: path("M1599.995,0C1289,0,1190.102,170.75,789,171C389,171,289,0,0,0v198h1600C1600,198,1599.995,29,1599.995,0z");
+  }
+
+  100% {
+    d: path("M1599.995,171C1289,171,1190.102-0.25,789,0C389,0,289,171,0,171v27h1600C1600,198,1599.995,200,1599.995,171z");
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    d: path("M1599.995,171c-137.774,0-222.164-171-333.16-171C1133.519,0,1012.409,170.861,789,171C590.467,171,473.704,0,355.321,0C236.505,0,145.56,171,0,171v27h1600C1600,198,1599.995,200,1599.995,171z");
+  }
+
+  50% {
+    d: path("M1599.995,0c-137.774,0-222.829,160.168-333.16,171C1134.156,184.026,1012.409-0.139,789,0C590.467,0,473.704,171,355.321,171C236.505,171,145.56,0,0,0v198h1600C1600,198,1599.995,29,1599.995,0z");
+  }
+
+  100% {
+    d: path("M1599.995,171c-137.774,0-222.164-171-333.16-171C1133.519,0,1012.409,170.861,789,171C590.467,171,473.704,0,355.321,0C236.505,0,145.56,171,0,171v27h1600C1600,198,1599.995,200,1599.995,171z");
+  }
+}
+
+//main styles
+
+.main{
+  width: 100%;
+  background: #ecebe4;
+  padding-bottom: 20px;
+  section {
+    max-width: 1600px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  #about {
+    .skills {
+      text-align: left;
+      padding-top: 10px;
+      li {
+        display: block;
+        color: #272933;
+        margin-left: 60px;
+        font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
+        font-size: 20px;
+        letter-spacing: 0px;
+      }
+    }
+  }
+    #projects {
+      .project {
+        padding-bottom: 20px;
+        form {
+          input {
+            margin-left: 60px;
+            background: #EA693F;
+            border-style: none;
+            height: 30px;
+            width: 150px;
+            box-shadow: 3px 7px 20px rgba(117, 81, 125, 0.2);
+            font-family: 'Avenir Next', 'Segoe ui', Ubuntu, sans-serif;
+            font-size: 20px;
+            color: #ecebe4;
+          }
+        }
+      }
+    }
+  #contact{
+    .email{
+      color: #EA693F;
+      margin-left: 60px;
+      font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .social{
+      color: #EA693F;
+      display: block;
+      margin-left: 60px;
+      font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  p{
+    margin-left: 0;
+  }
+  .main {
+    #projects {
+      .project {
+        form {
+          input {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    #about {
+      .skills {
+        li {
+          margin-left: 0;
+        }
+      }
+    }
+    #contact {
+      .email {
+        margin-left: 0;
+      }
+      .social{
+        margin-left: 0;
+      }
+    }
+
+  }
+
+
+
+}
+
+@media (max-width: 400px){
+  h1, h2, h3{
+    font-size: 30px;
+  }
+  p{
+    font-size: 15px;
+  }
+  a{
+    font-size: 15px !important;
+  }
+}
+
+@media (min-width: 1500px){
+  h1{
+    padding-top:200px;
+  }
 }

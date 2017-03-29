@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-gb">
   <head>
-    <title>MattJHodges</title>
+    <title>Matt Hodges</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <header>
-      <nav class="siteNav">
-        <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main">
-      <section class="About">
-          <h2>About Me</h2>
-      </section>
-      <section class="Projects">
-          <h2>My Projects</h2>
-      </section>
-      <footer>
-        <div class="Contact">
-          <h2>Contact Me</h2>
-        </div>
-        <div class="social">
-          <h2>Find Me On...</h2>
-        </div>
-      </footer>
+  <header>
+    <nav class="siteNav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Matt Hodges</h1>
+    <div class="line"></div>
+    <h2>Web Developer</h2>
+
+    <div class="svgContainer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198">
+
+        <path class="wave three" fill="#EA693F" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z"/>
+        <path class="wave two" fill="#EA693F" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z"/>
+        <path class="wave one" fill="#EA693F" fill-rule="evenodd" d="M1599.995,171c-137.774,0-222.164-171-333.16-171C1133.519,0,1012.409,170.861,789,171C590.467,171,473.704,0,355.321,0C236.505,0,145.56,171,0,171v27h1600C1600,198,1599.995,200,1599.995,171z"/>
+      </svg>
+
     </div>
+  </header>
+  <div class="main">
+    <section id="about">
+      <h3>About</h3>
+      <p><strong>Front end web developer from Nottingham currently working as a front end magento intern at Juno Web Design.</strong></p>
+      <p>I studied Computer Science at The University of Nottingham for one year before deciding to study Philosophy and continue to teach myself web development. I try to keep at least one web project going in my spare time, which is currently a web app for beginner musicians. Outside of web development I'm currently studying for my final exams and working towards acheiving my grade 3 in piano.</p>
+      <p><strong>Things I know:</strong></p>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3 (SASS and LESS)</li>
+        <li>JavaScript (ES5 and ES6)</li>
+        <li>Gulp and Grunt</li>
+        <li>Magento 1 and 2</li>
+        <li>LAMP stack (Basic PHP)</li>
+        <li>Version Control</li>
+        <li>Responsive Design</li>
+      </ul>
+      <p><strong>Things I'm learning:</strong></p>
+      <ul class="skills">
+        <li>Node.js</li>
+        <li>Angular 2</li>
+
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <p><strong>Custom Magento 2 Site</strong></p>
+        <p>Skils used: HTML, LESS, Grunt, Magento 2, Basic PHP, LAMP stack.</p>
+        <p>In order to learn how to use magento 2 for my internship I created a magento 2 site. I mainly dealt with frontend development in this project but I also had to use some basic php to modify the phtml files. I developed and deployed this website using the LAMP stack which required me to learn how to configure apache servers.</p>
+        <form action="http://cove.mattjhodges.com" target="_blank">
+          <input type="submit" value="Go to Site" />
+        </form>
+      </div>
+
+      <div class="project">
+        <p><strong>Javascript Sketchpad</strong></p>
+        <p>Skils used: HTML, CSS, JavaScript, JQuery.</p>
+        <p>In order to start learning JavaScript I built a sketchpad which allows you to draw with your mouse by hovering over the drawing area. It is customizable allowing you to choose the canvas size and offering a range of colour options.</p>
+        <form action="https://sketchpad-matt.herokuapp.com/" target="_blank">
+          <input type="submit" value="Go to Site" />
+        </form>
+      </div>
+      <div class="project">
+        <p><strong>Google Clone</strong></p>
+        <p>Skils used: HTML, CSS.</p>
+        <p>One of the first projects I worked on was a clone of the google search engine homepage, this doesn't include search functionality as it was purely a design project. This was to give me practice using HTML and CSS.</p>
+        <form action="https://google-clone.herokuapp.com/" target="_blank">
+          <input type="submit" value="Go to Site" />
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p><strong>If you have any web development opportunities you think I might be interested in please send me a message:</strong></p>
+      <a class="email" href= "mailto:matthewjhodges94@gmail.com">matthewjhodges94@gmail.com</a>
+      <p><strong>Visit me at:</strong></p>
+      <a class="social" href="http://github.com/MattHodges94" target="_blank">Github</a>
+      <a class="social" href="http://instagram.com/mattjhodges" target="_blank">Instagram</a>
+      <a class="social" href="http://twitter.com/mattjhodges" target="_blank">Twitter</a>
+    </section>
+  </div>
   </body>
 </html>
